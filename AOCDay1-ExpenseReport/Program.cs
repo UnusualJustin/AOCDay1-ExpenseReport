@@ -44,12 +44,12 @@ namespace AOCDay2_ExpenseReport
             }
             else
             {
-                foreach (int value in values)
+                for (int i = 0; i < values.Length; i++)
                 {
-                    List<int> appends = FindAddends(sum - value, values, numberOfAddends - 1);
+                    List<int> appends = FindAddends(sum - values[i], values.Skip(i).ToArray(), numberOfAddends - 1);
                     if (appends != null)
                     {
-                        appends.Insert(0, value);
+                        appends.Insert(0, values[i]);
                         return appends;
                     }
                 }
