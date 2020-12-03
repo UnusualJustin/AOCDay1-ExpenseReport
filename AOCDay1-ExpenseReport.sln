@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AOCDay1-ExpenseReport", "AOCDay2-ExpenseReport\AOCDay1-ExpenseReport.csproj", "{B60B16BB-EA47-42AD-80E1-291CCD8543D2}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AOCDay1-ExpenseReport", "AOCDay1-ExpenseReport\AOCDay1-ExpenseReport.csproj", "{B60B16BB-EA47-42AD-80E1-291CCD8543D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
