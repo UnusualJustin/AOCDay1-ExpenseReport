@@ -21,6 +21,8 @@ namespace AOCDay2_ExpenseReport
             FindAddendsAndMultiply(values, 6517, 6);
             FindAddendsAndMultiply(values, 7400, 7);
             FindAddendsAndMultiply(values, 10000, 8);
+            //FindAddendsAndMultiply(values, 90000, 9);
+            FindAddendsAndMultiply(values, 20000, 9);
         }
 
         static void FindAddendsAndMultiply(int[] values, int sum, int numberOfAddends)
@@ -28,10 +30,11 @@ namespace AOCDay2_ExpenseReport
             List<int> addends = FindAddends(sum, values, numberOfAddends);
             if (addends != null)
             {
-                Console.WriteLine("{0} = 2020; {1} = {2}",
-                              string.Join(" + ", addends.Select(a => a.ToString())),
-                              string.Join(" * ", addends.Select(a => a.ToString())),
-                              CalculateProduct(addends));
+                Console.WriteLine("{0} = {1}; {2} = {3}",
+                                  string.Join(" + ", addends.Select(a => a.ToString())),
+                                  sum,
+                                  string.Join(" * ", addends.Select(a => a.ToString())),
+                                  CalculateProduct(addends));
             }
             else
             {
